@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="/register" method="POST">
+    <h1>Registeration form</h1>
+    <input type="text" name="firstname" placeholder="First name">
+    <input type="text" name="lastname" placeholder="Last name">
+    <input type="email" name="email" placeholder="E-mail">
+    <input type="number" name="phone" placeholder="Mobile Number">
+    <input type="text" name="password" placeholder="Password">
+    <input type="text" name="confirmPassword" placeholder="Confirm Password">
+   {{!-- <input type="submit" class="btnRegister" value="Register" name="register">   --}}
+   <button type="submit">Register</button>
+     <p>Already have an account ? <a href="/login">Login</a></p>
+    
+    </form>
+</body>
+<style>
+    body{
+        margin:0;
+        padding:0;
+        height:100vh;
+        width:100vw;
+        display:flex;
+        justify-content:center;
+        align-items:center;
+        font-family:monospace;
+    }
+    h1{
+        width:100%;
+        text-align:center;
+        font-size:2.3rem;
+    }
+    form{
+        width:50rem;
+        height:30rem;
+        border:2px solid black;
+        display:flex;
+        flex-direction: column;
+        align-items:center;
+        gap:1rem;
+    }
+    input{
+        width:50%;
+        height:1.5rem;
+        border:1px solid black;
+
+    }
+    button{
+    width:7rem;
+    height:2rem;
+    font-size:1.3rem;
+    }
+</style>
+</html>

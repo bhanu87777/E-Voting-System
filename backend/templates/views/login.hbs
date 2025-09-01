@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="/login" method="post" >
+    <h1>Login Page</h1>
+    <input type="text" placeholder="Enter your aadhar" name="aadhar"> 
+    <input type="password" placeholder="Enter your password" name="password">
+    <button type="submit">Login</button>
+    <p>Don't have an account? <a href="/register">Register here</a></p>
+    </form>
+</body>
+<style>
+    body{
+        margin:0;
+        padding:0;
+        height:100vh;
+        width:100vw;
+        display:flex;
+        justify-content:center;
+        flex-direction:column;
+        align-items:center;
+        font-family:monospace;
+    }
+    h1{
+        width:100%;
+        text-align:center;
+        font-size:2.3rem;
+    }
+    form{
+        width:30rem;
+        height:25rem;
+        border:2px solid black;
+        display:flex;
+        flex-direction: column;
+        align-items:center;
+        gap:2rem;
+    }
+    input{
+        width:50%;
+        height:1.5rem;
+        border:1px solid black;
+
+    }
+    button{
+    width:7rem;
+    height:2rem;
+    font-size:1.3rem;
+    }
+</style>
+</html>
